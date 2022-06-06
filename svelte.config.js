@@ -8,7 +8,15 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		vite: {
+			server: {
+				hmr: {
+					clientPort: 3000,
+					host: process.env.HMR_POST ? process.env.HMR_POST.substring("https://".lenght) : "localhost"
+				}
+			}
+		}
 	}
 };
 
