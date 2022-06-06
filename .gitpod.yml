@@ -4,9 +4,7 @@
 
 tasks:
   - init: npm install && npm run build
-    command: |
-        export HMR_HOST = `gp url 3000` 
-        echo "Starting dev server......"
+    command: 
         npm run dev
 
 ports:
