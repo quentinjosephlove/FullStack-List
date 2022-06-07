@@ -12,6 +12,7 @@ body{
         var(--secondary-color),
         var(--tertiary-color)
     );
+    min-height: 100vh;
 }
 h1{
     text-align: center;
