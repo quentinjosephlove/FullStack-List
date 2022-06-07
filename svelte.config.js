@@ -13,7 +13,7 @@ const config = {
 			server: {
 				hmr: {
 					clientPort: 3000,
-					host: process.env.HMR_POST ? process.env.HMR_POST.substring("https://".lenght) : "localhost"
+					host: process.env.HMR_POST ? process.env.HMR_POST.substring("https://".length) : "localhost"
 				}
 			}
 		}
