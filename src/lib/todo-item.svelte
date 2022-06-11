@@ -25,11 +25,15 @@
      padding: 0.5em 2em 0.5em 0.8em;
      border-radius: 3px;
     }
-    .toggle{
-        border: 1px solid rgba(0, 0, 0, 0.2);
+    button.toggle{
+        border: 2px solid rgba(0, 0, 0, 0.2);
         border-radius: 50%;
         box-sizing: border-box;
         background-size: 1em auto;
+    }
+    #check{
+        margin-left: -5px;
+        opacity: 0;
     }
     .text{
      position: relative;
@@ -55,10 +59,15 @@
         opacity: 1;
         cursor: pointer;
     }
-    .toggle{
+    .done{
+        transform: none;
+        opacity: 0.4;
+        filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.1));
+    }
+    .done .toggle #check{
         opacity: 0.5;
     }
-    .toggle :focus ,.toggle:hover{
+    .toggle #check:focus , .toggle #check:hover{
         transition: opacity 0.3s;
         opacity: 1;
         cursor: pointer;
@@ -67,7 +76,7 @@
  <div class="wrapper">
      <form action="" method="">
          <input type="hidden" name="done" value=""/>
-         <button aria-label="Mark done/Not done" class="toggle"><i class="material-icons-outlined">
+         <button aria-label="Mark done/Not done" class="toggle done"><i class="material-icons-outlined " id="check">
             done
          </i></button>
      </form>
