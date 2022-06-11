@@ -40,7 +40,7 @@
     .save{
        position: absolute;
        right: 0;
-       opacity: 0;
+       opacity: 100;
     }
  </style>
  <div class="wrapper">
@@ -51,9 +51,9 @@
      <form action="" method="" class="text">
            <input type="text"/>
            <button aria-label="Save todo" class="save">
-               <span class="material-icons-outlined">
+               <i class="material-icons-outlined">
                    bookmark_add
-              </span>
+               </i>
            </button>
      </form>
      <form action="" method="">
