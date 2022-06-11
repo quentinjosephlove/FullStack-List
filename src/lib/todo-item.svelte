@@ -40,13 +40,36 @@
     .save{
        position: absolute;
        right: 0;
-       opacity: 100;
+       opacity: 0;
+    }
+    .wrapper input:focus + .save, .save:focus{
+        transition: opacity 0.2s;
+        opacity: 1;
+        cursor: pointer;
+    }
+    .delete{
+        opacity: 0.5;
+    }
+    .delete:hover, .delete:focus{
+        transition: opacity 0.2s;
+        opacity: 1;
+        cursor: pointer;
+    }
+    .toggle{
+        opacity: 0.5;
+    }
+    .toggle :focus ,.toggle:hover{
+        transition: opacity 0.3s;
+        opacity: 1;
+        cursor: pointer;
     }
  </style>
  <div class="wrapper">
      <form action="" method="">
          <input type="hidden" name="done" value=""/>
-         <button aria-label="Mark done/Not done" class="toggle">Done/Not Done</button>
+         <button aria-label="Mark done/Not done" class="toggle"><i class="material-icons-outlined">
+            done
+         </i></button>
      </form>
      <form action="" method="" class="text">
            <input type="text"/>
@@ -57,6 +80,8 @@
            </button>
      </form>
      <form action="" method="">
-          <button aria-label="Delete todo" class="delete">Delete</button>
+          <button aria-label="Delete todo" class="delete"><i class="material-icons-outlined">
+            delete
+          </i></button>
      </form>
  </div>
