@@ -36,7 +36,7 @@
 </svelte:head>
 <div class="todo">
     <h1>{title}</h1>
-<form method="" action="" class="new">
+<form method="post" action="/todos.json" class="new">
     <input type="text" placeholder=" + type to add a todo" aria-label="add a Todo" name="text">
 </form>
 <TodoItem></TodoItem>
